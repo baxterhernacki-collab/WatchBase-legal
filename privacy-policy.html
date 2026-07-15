@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Watch Space — Privacy Policy</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 32px 20px 80px; line-height: 1.6; color: #1a1a1a; }
+  h1 { font-size: 28px; margin-bottom: 4px; }
+  h2 { font-size: 18px; margin-top: 36px; border-bottom: 1px solid #ddd; padding-bottom: 6px; }
+  .updated { color: #666; font-size: 14px; margin-bottom: 32px; }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+  th, td { text-align: left; padding: 8px 10px; border: 1px solid #ddd; font-size: 14px; vertical-align: top; }
+  th { background: #f5f5f5; }
+  a { color: #0a5cff; }
+  ul { padding-left: 22px; }
+</style>
+</head>
+<body>
+
+<h1>Watch Space — Privacy Policy</h1>
+<p class="updated">Last updated: July 14, 2026</p>
+
+<p>
+  Watch Space ("the app") is a personal watch-collection tracker. This policy explains what
+  information the app collects, why, and how you can delete it. Watch Space is built for
+  individual collectors and does not run ads, sell data, or share your information with data
+  brokers.
+</p>
+
+<h2>Information we collect</h2>
+<table>
+  <tr><th>Data</th><th>Why we collect it</th></tr>
+  <tr>
+    <td>Email address and password</td>
+    <td>Used to create and sign in to your account. Passwords are never visible to us — they are
+      handled by our authentication provider, Supabase, using industry-standard hashing.</td>
+  </tr>
+  <tr>
+    <td>Watch collection details</td>
+    <td>Brand, model, purchase price, estimated value, service history, wear history, accuracy
+      logs, insurance details, and photos you add — this is the core data the app exists to store
+      for you.</td>
+  </tr>
+  <tr>
+    <td>Photos taken with the in-app scanner</td>
+    <td>When you use the "Scan" feature to identify a watch, the photo is sent to Anthropic's
+      Claude AI API for one-time identification (brand, model, estimated value, etc.). Anthropic
+      processes this photo to generate the identification result but Watch Space does not use it
+      to train any model. If you save the watch to your collection, the photo is then stored in
+      our private, access-controlled Supabase storage tied to your account.</td>
+  </tr>
+  <tr>
+    <td>Face ID / Touch ID / device biometrics</td>
+    <td>If you turn on the optional app-lock setting, your device's biometric authentication is
+      used to unlock the app. This happens entirely on your device via Apple's/Google's own
+      biometric APIs — Watch Space never receives, stores, or transmits any biometric data.</td>
+  </tr>
+  <tr>
+    <td>Purchase and subscription status</td>
+    <td>If you subscribe to Watch Space Pro, purchase and entitlement status is managed by
+      RevenueCat and the App Store/Play Store. We receive your entitlement status (e.g. "Pro" or
+      "Free") but not your payment details — those are handled entirely by Apple/Google.</td>
+  </tr>
+</table>
+
+<p>Watch Space does <strong>not</strong> collect your location, contacts, browsing history, or any
+  advertising identifiers, and does not use third-party analytics or ad-tracking SDKs.</p>
+
+<h2>Where your data is stored</h2>
+<ul>
+  <li><strong>Supabase</strong> — our database and file-storage provider, hosts your account data
+    and photos. Access is restricted to your own account via row-level security; no other user or
+    the general public can read your data.</li>
+  <li><strong>Anthropic</strong> — processes photos you submit to the Scan feature for one-time AI
+    identification.</li>
+  <li><strong>RevenueCat / Apple / Google</strong> — manage subscription purchases and entitlement
+    status.</li>
+</ul>
+
+<h2>Your controls</h2>
+<ul>
+  <li><strong>Delete a single watch</strong> — permanently deletes that watch's record, photo, and
+    all related wear/service/accuracy history. Available from any watch's detail screen ("Delete
+    Permanently").</li>
+  <li><strong>Delete your account</strong> — permanently deletes your entire account: every watch,
+    photo, and log tied to it, and your login credentials. Available from the dashboard screen
+    ("Delete Account"). This action is immediate and cannot be undone.</li>
+  <li><strong>Hide values</strong> — an in-app setting to mask dollar amounts on-screen.</li>
+  <li><strong>App lock</strong> — an optional setting requiring Face ID/Touch ID/device PIN to open
+    the app, including automatically re-locking after the app has been backgrounded.</li>
+</ul>
+
+<h2>Data retention</h2>
+<p>
+  We retain your data for as long as your account exists. If you delete a single watch or your
+  entire account through the in-app controls above, the corresponding data is deleted immediately
+  from our systems — we do not keep a recoverable backup of deleted data beyond routine
+  short-term database backups used for disaster recovery, which age out on their own schedule.
+</p>
+
+<h2>Children's privacy</h2>
+<p>Watch Space is not directed at children under 13, and we do not knowingly collect data from
+  children under 13.</p>
+
+<h2>Changes to this policy</h2>
+<p>If this policy changes, the "Last updated" date above will change accordingly. Material changes
+  will be communicated in-app where practical.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy or your data can be sent to
+  <a href="mailto:baxter.hernacki@gmail.com">baxter.hernacki@gmail.com</a>.</p>
+
+</body>
+</html>
